@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+body {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(0deg, #ff0000 0%, #8080ff 42%, #ffffff 100%);
+
+}
+p { /* общий для всех параграфов. если
+     надо смениться нижними атрибутами*/ 
+    color:darkolivegreen;
+}
+.nav-link {
+    color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav .nav-link.active {
+    color: rgb(222, 232, 228);
+}
+.navbar-brand img {
+    width: 55px;
+}
+.navbar-toggler {
+    background-color: rgb(169, 180, 176);
+
+}
+.card-img-top {
+    height: 300px;/*выравниваем 
+    картинки по вертикали*/
+} 
+
+.sidebar {
+    color: rgb(10, 138, 95);
+    background: linear-gradient(270deg, #ff0000 0%, #8080ff 42%, #ffffff 100%);
+}
+.card {
+    background: linear-gradient(270deg, #ff0000 0%, #8080ff 42%, #ffffff 100%);
+    color: rgb(10, 138, 95); 
+}
+.card a{
+   text-decoration: none;
+   color: rgb(10, 138, 95);  
+}
+
+.slide-text, 
+.footer-text
+ {
+    color: rgb(10, 138, 95);
+    margin: auto auto;/* по центру текст */
+}
+footer,
+.btn-outline-primary {
+   background: linear-gradient(270deg, #7e3b6f 0%, #dbdbe4 42%, #637dd5 100%);  
+}
+.media-links {
+    display: flex; /*переводим в flex*/
+    justify-content: center;
+    align-items: center;
+}
+.call-anim {/* вставили первый код с сайта https://webcode.tools/css-generator/
+    keyframe-animation*/
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim { /* myAnim- стиль указанный в верхних скобках*/
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
