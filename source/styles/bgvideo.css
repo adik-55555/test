@@ -17,6 +17,7 @@
     не помещающихся фрагментов*/   
     object-fit: cover;
     background-color: rgba(86, 67, 67, 0.367);
+    z-index: 1;
 }
 
 .effect {
@@ -30,7 +31,8 @@
     object-fit: cover;
     background-color: rgba(86, 67, 67, 0.367);
 }
+
 .video-text {
-    color:aquamarine;
-    
+    color:rgb(127, 217, 255);
+    z-index: 2;
 }
